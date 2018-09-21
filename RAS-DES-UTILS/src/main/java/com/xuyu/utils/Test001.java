@@ -11,7 +11,7 @@ public class Test001 {
 		RSAUtil.generateKey();
 		System.out.println("私钥:" + RSAUtil.privateKey);
 		System.out.println("公钥:" + RSAUtil.publicKey);
-		String content = "yushengjun644";
+		String content = "我是Jamaica";
 		// 2.使用公钥进行加密
 		String encryptByPublicKey = RSAUtil.encryptByPublicKey(content, RSAUtil.publicKey, Cipher.ENCRYPT_MODE);
 		System.out.println("加密后:" + encryptByPublicKey);
